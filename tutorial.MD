@@ -19,11 +19,15 @@ Follow the steps and run the command below in the terminal on your local machine
 
 1. Create a new .ssh directory, run: 
     
-    `mkdir .ssh`
+    ```bash
+    mkdir .ssh
+    ```
     
 2. Now, create your new ssh key pair, run:
-`ssh-keygen -t ed25519 -f .ssh/do-key -C "your-email-address"`
-
+    
+    ```bash
+    ssh-keygen -t ed25519 -f .ssh/do-key -C "your-email-address"
+    ```    
 Once the key pair is generated, the private key remains on your local machine, while the public key will be used in next step.
 
 ### Step 2: Adding a SSH key to your DigitalOcean Account:
@@ -38,7 +42,7 @@ Once the key pair is generated, the private key remains on your local machine, w
     
 4. In PowerShell terminal, run the following command, and the public key will be copied: 
     
-    `Get-Content C:\Users\user-name\.ssh\do-key.pub | Set-Clipboard`
+    ```Get-Content C:\Users\user-name\.ssh\do-key.pub | Set-Clipboard```
     
 5. Go back to your DigitalOcean page, and do:
     1. paste the public key your just copied to the SSH key content field,
