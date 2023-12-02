@@ -305,25 +305,24 @@ We will use vim to create and edit a configuration file specific to your site. T
     sudo vim /etc/nginx/sites-available/my-site.conf
     ```
     
-
-```bash
-server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
-	
-	root /var/www/my-site;
-	
-	index index.html index.htm index.nginx-debian.html;
-	
-	server_name _;
-	
-	location / {
-		# First attempt to serve request as file, then
-		# as directory, then fall back to displaying a 404.
-		try_files $uri $uri/ =404;
-	}
-}
-```
+    ```bash
+    server {
+    	listen 80 default_server;
+    	listen [::]:80 default_server;
+    	
+    	root /var/www/my-site;
+    	
+    	index index.html index.htm index.nginx-debian.html;
+    	
+    	server_name _;
+    	
+    	location / {
+    		# First attempt to serve request as file, then
+    		# as directory, then fall back to displaying a 404.
+    		try_files $uri $uri/ =404;
+    	}
+    }
+    ```
 
 2. By creating this symbolic link, you're enabling the configuration for your site. Let’s create a symbolic link to your new config file in `/etc/nginx/sites-enabled` :
     
