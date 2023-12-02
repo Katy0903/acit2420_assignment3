@@ -10,7 +10,7 @@ This guide presents a step-by-step tutorial to walk you through the entire proce
 
 Let’s get started! 
 
-## ****Setting Up a Debian 12 Server on DigitalOcean****
+## Setting Up a Debian 12 Server on DigitalOcean
 
 Before we create a droplet, we need to create and add a SSH key to your DigitalOcean Account which make you securely access your account.
 
