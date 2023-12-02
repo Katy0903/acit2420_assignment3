@@ -11,6 +11,9 @@ Chiao-Jhu (Katy) Chan <br>
 A01336316 <br>
 Set B
 
+
+My assignment tutorial is here: [tutorial.MD](tutorial.MD) (click).
+
 ## Reference:
 
 - Assignment Instruction: https://gitlab.com/cit2420/f23-notes/-/blob/main/assignments/as3p1.md?ref_type=heads
