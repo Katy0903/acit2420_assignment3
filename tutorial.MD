@@ -117,7 +117,7 @@ Once the droplet is created, you would be able to access your new server.
 
 Now you are successfully connected to your new server! 
 
-## ****Creating and Setting up a New Regular User****
+## Creating and Setting up a New Regular User
 
 In this section, follow the steps to create a new regular user for your server.
 
@@ -191,7 +191,7 @@ In this section, follow the steps to create a new regular user for your server.
 
 Perfect! You have successfully create a new regular user for your server!
 
-## ****Prevent Root SSH Access****
+## Prevent Root SSH Access
 
 In this section, we are going to set up preventing root user SSHaccess. The reason is preventing root login enhances security by mitigating the risk of unauthorized access and potential exploitation.
 
@@ -230,7 +230,7 @@ In this section, we are going to set up preventing root user SSHaccess. The reas
 
 Great! Now you are not able to log in as root user which make your server sercure!
 
-## ****Installing and Configuring Nginx****
+## Installing and Configuring Nginx
 
 Nginx is a powerful web server and enable you to serve your content efficiently. The steps below will guide you through the process of of installing and configuring Nginx on a your server. Please note to connect with regular user to do the steps.
 
