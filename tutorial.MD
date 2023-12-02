@@ -45,7 +45,7 @@ Once the key pair is generated, the private key remains on your local machine, w
     2. type your SSH key, and 
     3. click “**Add SSH key**”.
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/ee243a12-38cd-46c5-a41c-f64081bf1be2/Untitled.png)
+    ![Untitled](/images/2.png)
     
 
 ### Step 3: **Create a New Droplet:**
@@ -57,24 +57,24 @@ In this step, we are going to create a new droplet using DigitalOcean.
     
 2. Click “Create” and select “Droplets” to start create a new server.
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/a4b216e8-5aac-4f57-95f2-adfcab9f9626/Untitled.png)
+    ![Untitled](/images/3.png)
     
 3. Next, set up your server. There are several sections you can set up depends on your needs, in this tutorial, we will update the features below and leave the remaining default:
     1. **Choose an image:** Click “**Debian**” and you will see version 12 as default.
         
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/f9ec2824-363a-4b95-abe7-d80ba7fcbaca/Untitled.png)
+        ![Untitled](/images/4.png)
         
     2. **Choose Size - CPU options:** Click “**Regular**” and select “$4/mo” plan.
         
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/6cf5c0c2-0907-41cf-9442-1a94a0690051/Untitled.png)
+        ![Untitled](/images/5.png)
         
     3. **Choose Authentication Method:** Select “**SSH Key**” and mark the SSH key we just created in Step 1.
         
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/ffc7a588-7153-4e95-b8be-b34392653bc8/Untitled.png)
+        ![Untitled](/images/6.png)
         
     4. ****Finalize Details - Hostname:**** name your new droplet, let’s type “**Debian2**” in our case, then click “**Create Droplet**”.
         
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/c2766f91-227c-448b-9cf0-39c50a21edeb/Untitled.png)
+        ![Untitled](/images/7.png)
         
 
 Now you successfully created a new droplet, let’s move to next step!
@@ -85,7 +85,7 @@ Once the droplet is created, you would be able to access your new server.
 
 1. Once you finished step 3, you will be redirected to the project page, and you can find the information of your new server, **copy** the entire address.
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/1712c971-deec-4abf-b204-1bdd174ec0a3/Untitled.png)
+    ![Untitled](/images/8.png)
     
 2. In PowerShell terminal, run the command to use SSH to connect to your Debian2 server as a root user:
     
@@ -93,7 +93,7 @@ Once the droplet is created, you would be able to access your new server.
     ssh -i .ssh/do-key [root@64.23.130.120](mailto:root@64.23.130.120)
     ```
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/e5fe3051-8d51-417d-bae0-b1239bf07e24/Untitled.png)
+    ![Untitled](/images/9.png)
     
 3. Set up your password, run:
     
@@ -101,7 +101,7 @@ Once the droplet is created, you would be able to access your new server.
     passwd
     ```
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/42f44c2e-8bb0-4925-a076-47214bae7605/Untitled.png)
+    ![Untitled](/images/10.png)
     
     *Note: you will need to enter your password twice to set up.
     
@@ -198,7 +198,7 @@ In this section, we are going to set up preventing root user SSHaccess. The reas
     
 2. Search for the line `PermitRootLogin yes` and update it to `PermitRootLogin no`. This change prevents the root user from connecting via SSH.
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/a941e1b5-f76d-4082-a40a-88c111d70775/Untitled.png)
+    ![Untitled](/images/11.png)
     
     *Note: type **“i”** to change to insert mode, then press **“esc”** and type **“:wq”** to exit and save file.
     
@@ -216,7 +216,7 @@ In this section, we are going to set up preventing root user SSHaccess. The reas
     ssh -i .ssh/do-key root[@64.23.130.120](mailto:root@64.23.130.120)
     ```
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/56130919-e425-458e-84fd-1494151fddf1/Untitled.png)
+    ![Untitled](/images/12.png)
     
 
 Great! Now you are not able to log in as root user which make your server sercure!
@@ -347,7 +347,7 @@ server {
     sudo nginx -t
     ```
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/df7ed356-f664-4190-bfd3-c8ffa253283d/Untitled.png)
+    ![Untitled](/images/13.png)
     
 2. If the test is successful, restarts the Nginx service to apply the new configuration:
     
@@ -368,15 +368,15 @@ server {
     curl http://[64.23.130.120](mailto:root@64.23.130.120)
     ```
     
-    ![Display in regular user.](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/df5dc744-3f25-4dd1-b7ee-64f2e27b7fff/Untitled.png)
+    ![Display in regular user.](/images/14.png)
     
     Display in regular user.
     
-    ![Display in powershell.](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/361190fa-6798-441f-ba09-5f4f23b57ad4/Untitled.png)
+    ![Display in powershell.](/images/15.png)
     
     Display in powershell.
     
-    ![Display in browser.](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/606eb713-bd9c-4c9d-a0a7-093f65a618d5/Untitled.png)
+    ![Display in browser.](/images/16.png)
     
     Display in browser.
     
