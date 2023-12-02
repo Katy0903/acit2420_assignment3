@@ -12,7 +12,8 @@ A01336316 <br>
 Set B
 
 
-My assignment tutorial is here: [tutorial.MD](tutorial.MD) (click).
+You can access ny assignment tutorial by clicking here: [tutorial.MD](tutorial.MD) 
+
 
 ## Reference:
 
