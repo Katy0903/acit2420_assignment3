@@ -23,11 +23,13 @@ Follow the steps and run the command below in the terminal on your local machine
     mkdir .ssh
     ```
     
+
 2. Now, create your new ssh key pair, run:
     
     ```bash
     ssh-keygen -t ed25519 -f .ssh/do-key -C "your-email-address"
-    ```    
+    ```
+    
 Once the key pair is generated, the private key remains on your local machine, while the public key will be used in next step.
 
 ### Step 2: Adding a SSH key to your DigitalOcean Account:
@@ -42,7 +44,9 @@ Once the key pair is generated, the private key remains on your local machine, w
     
 4. In PowerShell terminal, run the following command, and the public key will be copied: 
     
-    ```Get-Content C:\Users\user-name\.ssh\do-key.pub | Set-Clipboard```
+    ```bash
+    Get-Content C:\Users\user-name\.ssh\do-key.pub | Set-Clipboard
+    ```
     
 5. Go back to your DigitalOcean page, and do:
     1. paste the public key your just copied to the SSH key content field,
@@ -207,14 +211,14 @@ In this section, we are going to set up preventing root user SSHaccess. The reas
     *Note: type **“i”** to change to insert mode, then press **“esc”** and type **“:wq”** to exit and save file.
     
 
-1. After editing the file, restart the SSH service to apply the changes:
+3. After editing the file, restart the SSH service to apply the changes:
     
     ```bash
     sudo systemctl restart ssh.service
     
     ```
     
-2. Now, test if you can no longer connect to your server as root:
+4. Now, test if you can no longer connect to your server as root:
     
     ```bash
     ssh -i .ssh/do-key root[@64.23.130.120](mailto:root@64.23.130.120)
@@ -321,14 +325,14 @@ server {
 }
 ```
 
-1. By creating this symbolic link, you're enabling the configuration for your site. Let’s create a symbolic link to your new config file in `/etc/nginx/sites-enabled` :
+2. By creating this symbolic link, you're enabling the configuration for your site. Let’s create a symbolic link to your new config file in `/etc/nginx/sites-enabled` :
     
     ```bash
     sudo ln -s /etc/nginx/sites-available/my-site.conf /etc/nginx/sites-enabled/
     ```
     
 
-1. Check the symbolic link status:
+3. Check the symbolic link status:
     
     ```bash
     cd /etc/nginx/sites-enabled/
@@ -345,7 +349,7 @@ server {
     ```
     
 
-1. Before restarting Nginx, test your configurations to ensure there are no syntax errors:
+4. Before restarting Nginx, test your configurations to ensure there are no syntax errors:
     
     ```bash
     sudo nginx -t
@@ -353,13 +357,13 @@ server {
     
     ![Untitled](/images/13.png)
     
-2. If the test is successful, restarts the Nginx service to apply the new configuration:
+5. If the test is successful, restarts the Nginx service to apply the new configuration:
     
     ```bash
     sudo systemctl restart nginx
     ```
     
-3. Finally, run the curl command to verify that your HTML document is being served:
+6. Finally, run the curl command to verify that your HTML document is being served:
     
     ```bash
     curl [64.23.130.120](mailto:root@64.23.130.120)
