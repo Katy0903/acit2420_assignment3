@@ -31,7 +31,7 @@ Once the key pair is generated, the private key remains on your local machine, w
 1. Visit the DigitalOcean website: https://www.digitalocean.com/
 2. Click “**Log in**” to your DigitalOcean account. **Note: If you don’t have an account yet, click “Sign up” to create a new account.*
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6e4f5525-0771-4cbb-a45c-89427fa23e9e/fd202437-afa2-4581-bbb9-c962d23f4ba7/Untitled.png)
+    ![Untitled](/images/1.png)
     
 3. Click “**Settings**” section → “**Security**” menu, and then click the "**Add SSH Key**" button.
     
