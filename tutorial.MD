@@ -299,7 +299,7 @@ Nginx is a powerful web server and enable you to serve your content efficiently.
 
 We will use vim to create and edit a configuration file specific to your site. The Nginx server block configuration sets up how Nginx will serve your website, defining the root directory, index files, server name, and location handling.
 
-1. Create a new file in `/etc/nginx/sites-available` and paste the nginx config below into it:
+1. Create a new file in `/etc/nginx/sites-available` and copy the nginx config (example below) into it:
     
     ```bash
     sudo vim /etc/nginx/sites-available/my-site.conf
