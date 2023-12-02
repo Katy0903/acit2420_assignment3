@@ -2,10 +2,11 @@
 
 This guide presents a step-by-step tutorial to walk you through the entire process.
 
-- Setting Up a Debian 12 Server on DigitalOcean
-- Creating a New Regular User
-- Prevent Root SSH Access
-- Installing and Configuring Nginx
+- [Setting Up a Debian 12 Server on DigitalOcean](#setting-up-a-debian-12-server-on-digitalocean)
+- [Creating a New Regular User](#creating-and-setting-up-a-new-regular-user)
+- [Prevent Root SSH Access](#prevent-root-ssh-access)
+- [Installing and Configuring Nginx](#installing-and-configuring-nginx)
+
 
 Let’s get started! 
 
